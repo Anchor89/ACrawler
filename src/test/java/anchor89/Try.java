@@ -1,10 +1,14 @@
 package anchor89;
 
 import static org.junit.Assert.*;
-import org.junit.Test;
 
+import org.junit.Test;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
 
 public class Try {
   final private static Logger logger = LogManager.getLogger(Try.class);
@@ -15,10 +19,11 @@ public class Try {
   
   @Test
   public void smoke() {
-    String line = "    afdasdfads    ";
-    String[] items = line.split("=", 2);
-    for (String item:items) {
-      logger.info(item);
-    }
+    assertTrue(true);
+    Document doc;
+    doc = DocumentHelper.createDocument();
+    logger.info("parsed");
+    Element cur = doc.getRootElement();
+    logger.info(cur);
   }
 }

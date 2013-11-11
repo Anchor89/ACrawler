@@ -1,4 +1,4 @@
-package anchor89;
+package anchor89.config;
 
 import static org.junit.Assert.*;
 

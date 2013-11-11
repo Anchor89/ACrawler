@@ -2,7 +2,7 @@
 <configuration status="debug" strict="true" name="XMLConfigTest" packages="org.apache.logging.log4j.test">
     <properties>
         <property name="logdir">log</property>
-        <property name="filename">HappyCrawler</property>
+        <property name="filename">ACrawler</property>
         <property name="pattern">%highlight{%-5p %d{HH:mm:ss.SSS} [%t] %logger{36}- %msg%n}</property>
     </properties>
 
