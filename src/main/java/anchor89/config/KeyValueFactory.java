@@ -30,7 +30,9 @@ public class KeyValueFactory {
       // TODO: change hard code supported type.
       return new ConversionType(key, value);
     } else if (key.startsWith("@@")){
-      return new Macro(key, value);
+      logger.warn("Should not use Macro in this version:" + key);
+      return null;
+//      return new Macro(key, value);
     } else if (key.equalsIgnoreCase("URL")) {
       return new UrlList(key, value);
     } else {
